@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     div{
+        height: 210px;
+        width: 300px;
+        margin-left: 37%;
+        margin-top: 12%;
+        border: 2px solid orange;
+        border-radius: 20px;
+        background-color: blueviolet;
+        border-color: orangered;
+        box-shadow: 2px 2px 2px 3px;
+        }
+        input{
+        text-align: center;
+        width: 95%;
+        height: 30px;
+        margin-left: 5px;
+        margin-top: 20px;
+        font-size: 18px;
+        background-color: rgb(69, 54, 100);
+        color: white;
+      }
+      input::placeholder{
+        color: white;
+      }
+      button{
+        margin-left: 27%;
+        margin-top: 2%;
+          height: 30px;
+          width: 130px;
+          background-color: red;
+          color: white;
+      }
+      button:hover{
+        background-color: black;
+        transition: 1s;
+      }
+     #ans{
+        color: black;
+        margin-left: 39%;
+        
+     }
+    
+</style>
+<body>
+   <div>
+    <input type="text" id="data" placeholder="Enter the mark of assignment">
+    <input type="text" id="data1" placeholder="Enter the mark of midterm">
+    <input type="text" id="data2" placeholder="Enter the mark of final exam">
+    <button onclick="fun()">Tax</button>
+    
+    </div>
+    <h1 id="ans"></h1>
+   
+</body>
+<script>
+    function fun()
+{
+  let a =  document.getElementById("data").value
+  let b=  document.getElementById("data1").value
+ let c = document.getElementById("data2").value
+ 
+
+      let x=a*40/100;
+      let y=b*30/100;
+      let z=c*30/100;
+
+      amt=x+y+z;
+      document.getElementById("ans").innerText=amt;
+
+      if (amt >= 90 &&amt <= 100) {
+        document.getElementById("ans").innerText =   amt + "% : A is Your Grade";
+      } else if (amt >= 80 && amt <= 89) {
+        document.getElementById("ans").innerText =   amt +  "% : B is Your Grade ";
+      } else if (amt >= 70 && amt <= 79) {
+        document.getElementById("ans").innerText =    amt + "% : C is Your Grade";
+      } else if (amt >= 60 && amt <= 69) {
+        document.getElementById("ans").innerText =    amt + "% : D is Your Grade";
+      } else if (amt >= 0 && amt <= 59) {
+        document.getElementById("ans").innerText =    amt + "% : F is Your Grade";
+      }
+   
+   
+}
+
+</script>
+</html>
+
+
+
+
+

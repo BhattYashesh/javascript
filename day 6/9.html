@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     div{
+        height: 100px;
+        width: 300px;
+        margin-left: 37%;
+        margin-top: 12%;
+        border: 2px solid orange;
+        border-radius: 20px;
+        background-color: blueviolet;
+        border-color: orangered;
+        box-shadow: 2px 2px 2px 3px;
+        }
+        input{
+        text-align: center;
+        width: 95%;
+        height: 30px;
+        margin-left: 5px;
+        margin-top: 20px;
+        font-size: 18px;
+        background-color: rgb(69, 54, 100);
+        color: white;
+      }
+      input::placeholder{
+        color: white;
+      }
+      button{
+        margin-left: 27%;
+        margin-top: 3%;
+       
+          height: 30px;
+          width: 130px;
+          background-color: red;
+          color: white;
+      }
+      button:hover{
+        background-color: black;
+        transition: 1s;
+      }
+     #ans{
+        color: black;
+        margin-left: 35%;
+        
+     }
+</style>
+<body>
+   <div>
+    <input type="text" id="age" placeholder="Enter the age">
+    <button onclick="fun()">Click</button>
+    
+    </div>
+    <h1 id="ans"></h1>
+</body>
+<script>
+    function fun() {
+      let answer = document.getElementById("age").value
+
+      if(answer >= 13 )
+       {
+        document.getElementById("ans").innerText = "You can access this website";
+      } 
+      
+      else {
+        document.getElementById("ans").innerText = "You can not access this website";
+      }
+    }
+</script>
+</html>
+
+
+
+
+

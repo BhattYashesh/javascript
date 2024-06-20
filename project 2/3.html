@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     div{
+        height: 210px;
+        width: 300px;
+        margin-left: 37%;
+        margin-top: 12%;
+        border: 2px solid orange;
+        border-radius: 20px;
+        background-color: blueviolet;
+        border-color: orangered;
+        box-shadow: 2px 2px 2px 3px;
+        }
+        input{
+        text-align: center;
+        width: 95%;
+        height: 30px;
+        margin-left: 5px;
+        margin-top: 20px;
+        font-size: 18px;
+        background-color: rgb(69, 54, 100);
+        color: white;
+      }
+      input::placeholder{
+        color: white;
+      }
+      button{
+        margin-left: 27%;
+        margin-top: 2%;
+          height: 30px;
+          width: 130px;
+          background-color: red;
+          color: white;
+      }
+      button:hover{
+        background-color: black;
+        transition: 1s;
+      }
+     #ans{
+        color: black;
+        margin-left: 40%;
+        
+     }
+    
+</style>
+<body>
+   <div>
+    <input type="text" id="data1" placeholder="Enter the Minimum range">
+    <input type="text" id="data2" placeholder="Enter the Maximum range">
+    <input type="text" id="data3" placeholder="Enter the Number">
+    <button onclick="fun()">Submit</button>
+    
+    </div>
+    <h1 id="ans"></h1>
+   
+</body>
+<script>
+    function fun()
+{
+  let a =  parseInt(document.getElementById("data1").value)
+  let b =  parseInt(document.getElementById("data2").value)
+  let c =  parseInt(document.getElementById("data3").value)
+ 
+       if(a<=c && c<=b){
+         document.getElementById("ans").innerText="Within Range"
+       }
+        else{
+             document.getElementById("ans").innerText="Out Of Range"
+        }
+   
+   
+}
+
+</script>
+</html>
+
+
+
+
+

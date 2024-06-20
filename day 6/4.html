@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     div{
+        height: 210px;
+        width: 300px;
+        margin-left: 37%;
+        margin-top: 12%;
+        border: 2px solid orange;
+        border-radius: 20px;
+        background-color: blueviolet;
+        border-color: orangered;
+        box-shadow: 2px 2px 2px 3px;
+        }
+        input{
+        text-align: center;
+        width: 95%;
+        height: 30px;
+        margin-left: 5px;
+        margin-top: 20px;
+        font-size: 18px;
+        background-color: rgb(69, 54, 100);
+        color: white;
+      }
+      input::placeholder{
+        color: white;
+      }
+      button{
+        margin-left: 27%;
+        margin-top: 2%;
+          height: 30px;
+          width: 130px;
+          background-color: red;
+          color: white;
+      }
+      button:hover{
+        background-color: black;
+        transition: 1s;
+      }
+     #ans{
+        color: black;
+        margin-left: 40%;
+        
+     }
+</style>
+<body>
+   <div>
+    <input type="text" id="data" placeholder="Enter value of A">
+    <input type="text" id="data2" placeholder="Enter value of B">
+    <input type="text" id="data3" placeholder="Enter value of C">
+    <button onclick="fun()">MAX</button>
+    
+    </div>
+    <h1 id="ans"></h1>
+</body>
+<script>
+    function fun()
+{
+  let answer1 =  document.getElementById("data").value
+  let answer2 =  document.getElementById("data2").value
+  let answer3 =  document.getElementById("data3").value
+
+    if(answer1 > answer2 && answer1 > answer3)
+        {
+            document.getElementById("ans").innerText="A is bigger value"
+        }
+        else if(answer2 > answer1 && answer2 > answer3)
+        {
+            document.getElementById("ans").innerText="B is bigger value"
+        }
+        else{
+            document.getElementById("ans").innerText="C is bigger value"
+        }
+}
+</script>
+</html>
+
+
+
+
+
