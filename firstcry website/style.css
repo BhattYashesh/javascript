@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.head{
+    height: 90px;
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.head .head1{
+    margin-top: 5px;
+     width: 33%;
+    
+ display: flex;
+ justify-content: space-evenly;
+ align-items: center;
+}
+.head1 .search{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid rgb(217, 209, 209);
+    padding: 5px;
+    color: rgb(94, 87, 87);
+    height: 40px;
+}
+.search p{
+    font-size: 15px;
+    margin-top: 10px;
+}
+.search i{
+    margin-left: 30px;
+   margin-bottom: 5px;
+   margin-right: 5px;
+}
+.head .head2{
+    width: 60%;
+    margin-right: 25px;
+}
+.head2 span{
+    opacity: 100%;
+    font-size: 14px;
+    color: rgb(131, 105, 105);
+}
+
+.category{
+    height: 50px;
+    width: 100%;
+    background-color: rgb(228, 197, 19);
+    display: flex;
+    justify-content: space-evenly;
+ align-items: center;
+}
+.category .incategory a{
+    width: 90%;
+    text-decoration: none;
+    color: rgb(65, 62, 62);
+    font-size: 15px;
+    padding-left: 15px;
+}
+.category .incategory img{
+    padding-left: 15px;
+}
+.category .incategory button{
+    background-color: rgb(32, 134, 230);
+    height: 50px;
+    border: none;
+    width: 90px;
+    color: white;
+    font-size: 17px;
+   margin-left: 15px;
+}
+
+.incategory .fashion{
+    color: black;
+}
+.incategory .fashion:hover{
+    color: blue;
+}
+.slider{
+   
+    width: 100%;
+}
+.slider .carousel-inner{
+    height: 400px;
+    width: 70%;
+    margin: auto;
+}
+
+.premium{
+    background-color: rgb(236, 234, 232);
+    width: 100%;
+    margin-top: 8px;
+}
+.premium .pmain{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.winter{
+  width: 90%;
+  margin: auto;
+  margin-top: 5px;
+}
+.winter .whead{
+    width: 100%;
+}
+.winter .whead img{
+    width: 100%;
+}
+.winter .wmain{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.winter .wmain img{
+    width: 25%;
+}
+
+footer{
+    width: 100%;
+    height: 900px;
+    background-color: rgb(203, 230, 241);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fmain{
+    width: 55%;
+    
+}
+.fimg{
+    width: 23%;
+    align-self: flex-start;
+    margin-top: 40px;
+}
+.fimg1 {
+    background-color: white;
+    height: 120px;
+    border: 1px solid white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+    /* position: absolute; */
+    margin-right: 20px;
+}
+.fimg1 img{
+    height: 100%;
+
+}
+.fimg p{
+    font-weight: bold;
+    text-align: center;
+}
+.fimg button{
+    position: relative;
+    top: -28%;
+    left: 25%;
+    background-color: rgb(76, 219, 76);
+    font-size: 13px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 4px;
+    color: white;
+    border: none;
+}
+.fimg .fimg2{
+    width: 100%;
+    margin-left: -20px;
+}
+.fimg .fimg2 img{
+  width: 100%;
+  height: 100%;
+  
+}
+
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    font-size: 14px; /* Adjusted font size */
+    margin-bottom: 10px;
+    color: #000; /* Changed to black */
+    border-bottom: 1px solid #000; /* Added underline */
+    padding-bottom: 5px; /* Space between text and underline */
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    font-size: 13px; /* Adjusted font size */
+    line-height: 1.8; /* Adjusted line height for better spacing */
+    color: #000; /* Changed to black */
+}
+
+.footer-section ul li a {
+    color: #000; /* Anchor text color set to black */
+    text-decoration: none; /* No underline for links */
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline; /* Optional underline on hover */
+    cursor: pointer;
+}

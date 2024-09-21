@@ -1,0 +1,131 @@
+{
+  "users": [
+    {
+      "id": "a62e",
+      "username": "yashesh",
+      "email": "yasheshbhatt77@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": "e5b2",
+      "username": "yashesh",
+      "email": "yasheshbhatt77@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": "a9f2",
+      "username": "yashesh",
+      "email": "yasheshbhatt77@gmail.com",
+      "password": "123"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/15819658a.webp",
+      "title": "Babyhug Disney Half Sleeves T-shirt & Shorts With Mickey Mouse",
+      "price": 486.36,
+      "discount": 579
+    },
+    {
+      "id": "2",
+      "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/17929794a.webp",
+      "title": "Babyhug Disney Terry Knit Full Sleeves Sweatshirt & Jogger With Winnie",
+      "price": 899.25,
+      "discount": 1199
+    },
+    {
+      "id": "3",
+      "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/18329570a.webp",
+      "title": "Babyhug Disney Cotton Knit Full Sleeves Sweatshirt & Jogger Set With Mickey Mouse Graphics ",
+      "price": 899.25,
+      "discount": 1199
+    },
+    {
+      "id": "4",
+      "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/18020930a.webp",
+      "title": "Taeko Single Jersey Knit Doctor Sleeves T-Shirt & Lounge Pants Set With Sporty Print",
+      "price": 475.15,
+      "discount": 559
+    },
+    {
+      "id": "5",
+      "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/18138833a.webp",
+      "title": "Ollypop Fleece Knit Full Sleeves Winter Wear Suit With Camping Adventure Print",
+      "price": 764.15,
+      "discount": 899
+    },
+    {
+      "id": "6",
+      "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/17380172a.webp",
+      "title": "Babyhug Disney Cotton Knit Half Sleeves T-Shirt & Denim Shorts Set With Mickey & Friends Print ",
+      "price": 835.24,
+      "discount": 1099
+    },
+    {
+      "id": "7",
+      "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/17380179a.webp",
+      "title": "Babyhug Disney Cotton Knit Half Sleeves T-Shirt & Mid Length Shorts Set With Mickey Mouse Print ",
+      "price": 615.23,
+      "discount": 799
+    },
+    {
+      "id": "8",
+      "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/16080080a.webp",
+      "title": "Plum Tree Half Sleeves Colour Blocked Tree & Abstract Printed Joggers",
+      "price": 681.01,
+      "discount": 1599
+    },
+    {
+      "id": "9",
+      "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/18138815a.webp",
+      "title": "Ollypop Fleece Knit Full Sleeves Winter Wear Suit With Text Embroidery",
+      "price": 976.65,
+      "discount": 1149
+    },
+    {
+      "id": "10",
+      "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/18138635a.webp",
+      "title": "Ollypop Fleece Knit Full Raglan Sleeves Winterwear T-Shirt & Pant Set With Text Print",
+      "price": 996.65,
+      "discount": 1149
+    },
+    {
+      "id": "11",
+      "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/14732773a.webp",
+      "title": "Little Kangaroos Full Sleeves Cord Set Winter Wear Suit",
+      "price": 831.36,
+      "discount": 1299
+    },
+    {
+      "id": "12",
+      "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/18214406a.webp",
+      "title": "Babyhug Disney Cotton Knit Full Sleeves Sweatshirt & Lounge Pants Set With Mickey Mouse Front & Back Graphics ",
+      "price": 899.25,
+      "discount": 1199
+    }
+  ],
+  "cart": [
+    {
+      "id": "1",
+      "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/15819658a.webp",
+      "title": "Babyhug Disney Half Sleeves T-shirt & Shorts With Mickey Mouse",
+      "price": 486.36,
+      "discount": 579
+    },
+    {
+      "id": "2",
+      "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/17929794a.webp",
+      "title": "Babyhug Disney Terry Knit Full Sleeves Sweatshirt & Jogger With Winnie",
+      "price": 899.25,
+      "discount": 1199
+    },
+    {
+      "id": "3",
+      "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/18329570a.webp",
+      "title": "Babyhug Disney Cotton Knit Full Sleeves Sweatshirt & Jogger Set With Mickey Mouse Graphics ",
+      "price": 899.25,
+      "discount": 1199
+    }
+  ]
+}
