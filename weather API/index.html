@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Widget</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+
+    <style>
+        body{
+           background-color: darkorange;
+}
+        
+         .city-form {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            margin-top: 100px;
+            margin-left: 35%;
+        }
+
+        .form-control {
+            height: 45px;
+            font-size: 16px;
+        }
+
+        .btn-submit {
+            background-color: #007bff;
+            color: white;
+            font-size: 16px;
+            height: 45px;
+            width: 100%;
+            border-radius: 5px;
+            margin-top: 10px;
+            border: none;
+        }
+
+        .btn-submit:hover {
+            background-color: #0056b3;
+        }
+        .container  {
+               background-color: aliceblue;
+        }
+
+    </style>
+</head>
+<body>
+
+    
+    <!-- <input type="text" placeholder="Enter City Name" id="city">
+    <button>Search</button> -->
+
+    <div class="city-form" id="form">
+        <h3 class="text-center">Weather API</h3><br>
+        <div class="form-group">
+            <input type="text" id="city" class="form-control" placeholder="City name">
+        </div>
+        <button class="btn-submit" id="submitBtn">Submit</button>
+    </div>
+
+
+    <div class="container my-5"></div>
+</body>
+<script src="script.js"></script>
+</html>
+
