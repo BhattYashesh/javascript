@@ -1,0 +1,99 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Cloud Nine Niacinamide Glow Blush",
+      "price": 599,
+      "path": "./image/launche1.jpg"
+    },
+    {
+      "id": "2",
+      "name": "SUGAR Drop A Tint Lip Oil",
+      "price": 599,
+      "path": "./image/launche2.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Glide Peptide Serum Lipstick",
+      "price": 499,
+      "path": "./image/launche3.png"
+    },
+    {
+      "id": "4",
+      "name": "Partner In Shine Transferproof Lip Gloss",
+      "price": 699,
+      "path": "./image/launche4.jpg"
+    },
+    {
+      "id": "5",
+      "name": "SUGAR Matte Match Transferproof Foundation",
+      "price": 599,
+      "path": "./image/launche5.jpg"
+    },
+    {
+      "id": "6",
+      "name": "Blend The Rules Eyeshadow Palette",
+      "price": 625,
+      "path": "./image/launche6.jpg"
+    },
+    {
+      "id": "7",
+      "name": "Mousse Muse Lip Cream",
+      "price": 555,
+      "path": "./image/launche7.gif"
+    },
+    {
+      "id": "8",
+      "name": "Mettle Cream To Powder Foundation",
+      "price": 1199,
+      "path": "./image/launche8.jpg"
+    },
+    {
+      "id": "9",
+      "name": "Auto Correct Creaseless Concealer",
+      "price": 599,
+      "path": "./image/launche9.jpg"
+    },
+    {
+      "id": "10",
+      "name": "Limited-Edition La La Love 18HR Liquid Lipstick",
+      "price": 299,
+      "path": "./image/launche10.jpg"
+    },
+    {
+      "id": "11",
+      "name": "SUGAR Play Mega Hype Colour Changing Lip Oil",
+      "price": 599,
+      "path": "./image/launche11.jpg"
+    },
+    {
+      "id": "12",
+      "name": "Bold Unfold Waterproof Mascara",
+      "price": 599,
+      "path": "./image/launche12.jpg"
+    }
+  ],
+  "users": [
+   
+  ],
+  "carts": [
+    {
+      "id": "1",
+      "name": "Cloud Nine Niacinamide Glow Blush",
+      "price": 599,
+      "path": "./image/launche1.jpg"
+    },
+    {
+      "id": "2",
+      "name": "SUGAR Drop A Tint Lip Oil",
+      "price": 599,
+      "path": "./image/launche2.jpg"
+    },
+    {
+      "id": "5",
+      "name": "SUGAR Matte Match Transferproof Foundation",
+      "price": 599,
+      "path": "./image/launche5.jpg"
+    }
+  ]
+}

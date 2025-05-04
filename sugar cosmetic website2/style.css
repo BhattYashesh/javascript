@@ -1,0 +1,408 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.smallheader{
+    height: 35px;
+    width: 100%;
+    background-image: url(image/small\ header.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.small1{    
+    height: 100%;
+    width: 35%;
+    margin-left: -120px;
+}
+.small1 h6{
+    font-size: 13px;
+    font-weight: bolder;
+    color: white;
+   padding-top: 8px;
+}
+
+.small2{
+    height: 100%;
+    width: 35%;
+  margin-right: -280px;
+  margin-bottom: -5px;
+}
+.small2 span{
+    color: white;
+    font-weight: 500;
+    padding-right: 15px;
+}
+
+.mainheader{
+    background-color: black;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.logo{
+    height: 100%;
+    width: 20%;
+    
+}
+.logo img{
+    margin-top: 20px;
+    height: 45%;
+    width: 70%;
+    margin-left: 50px;
+}
+.headerinput{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    width: 45%;
+}
+.headerinput input{
+    background-color: rgb(29, 28, 28);
+    border:  1px solid white;
+    height: 41px;
+    width: 600px;
+    color: white;
+   border-radius: 8px;
+}
+
+.headerinput button{
+    height: 44px;
+    width: 100px;
+    margin-left: -15px;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.loginhead{
+    height: 100%;
+    width: 10%;
+}
+.loginhead i{
+    margin-top: 25px;
+}
+.loginhead span{
+    color: white;
+}
+
+.headicons{
+    height: 100%;
+    width: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+   
+}
+
+.menu{
+    height: 40px;
+    width: 100%;
+    background-color: rgb(7, 7, 7);
+}
+.menu ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+ li{
+   color: white;
+  list-style: none;
+  font-size: 15px;
+  margin-top: 6px;
+}
+
+.mainslider{
+    height: 400px;
+    width: 100%;
+}
+
+.bestseller{
+    height: 400px;
+    width: 100%;
+}
+.besthead{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+.besthead span{
+    color: rgb(243, 52, 243);
+    font-weight: bolder;
+}
+.besthead p{
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 4px;
+}
+
+#rating{
+    font-size: 13px;
+    opacity: 0.8;
+}
+
+.heart{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.heartsymbol{
+    height: 40px;
+    width: 45px;
+    border-radius: 12px;
+    border: 2px solid black;
+}
+.heartsymbol i{
+    line-height: 40px;
+    margin-left: 11px;
+}
+ .productbtn{
+    height: 40px;
+    width: 190px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    border: none;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+#container1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+    height: 400px;
+}
+.banner1 , .banner2 , .banner3{
+   width: 31%;
+  /* border: 1px solid black; */
+  overflow: hidden;
+  border-radius: 20px;
+    height: 300px;
+}
+.banner1 img{
+    height: 100%;
+    width: 100%;
+}
+.banner2 img{
+    height: 100%;
+    width: 100%;
+}
+.banner3 img{
+    height: 100%;
+    width: 100%;
+}
+
+.subscribe{
+    background-color: rgb(243, 237, 231);
+}
+
+
+.footerinput{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    width: 45%;
+    margin-left: 27%;
+}
+.footerinput input{
+    background-color: white;
+    border:  1px solid black;
+    height: 41px;
+    width: 600px;
+    color: white;
+   border-radius: 8px;
+}
+
+.footerinput button{
+    height: 41px;
+    width: 140px;
+    margin-left: -13px;
+    border-radius: 0px 10px 10px 0px;
+    background-color: rgb(31, 28, 28);
+    color: white;
+}
+
+
+footer{
+    height: 780px;
+    width: 100%;
+    background-color: rgb(7, 7, 7);
+    position: relative;
+}
+
+.footlogo{
+    height: 100px;
+    width: 8%;
+   top: -7%;
+   left: 46%;
+    position: absolute;
+}
+.footlogo img{
+    height: 100%;
+    width: 100%;
+}
+.socialmedia{
+    width: 250%;
+   margin-left: -65%;
+}
+.socialmedia i{
+    padding-left: 20px;
+    color: white;
+}
+
+footer .container{
+    /* background-color: brown; */
+    height: 400px;
+    top: 25%;
+    left: 6%;
+    position: absolute;
+}   
+
+.footerhr{
+    width: 100%;
+   font-weight: bold;
+    color: white;
+}
+.footermenu{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    font-weight: 600;
+    font-size: 17px;
+    margin-top: 25px;
+}
+
+.touch {
+    margin-left: 40px;
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.footerheading{
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+.footerpara{
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    opacity: 0.8;
+}
+.footerpara2{
+    font-size: 17px;
+    color: white;
+    opacity: 0.8;
+}
+.footerparall{
+    font-size: 17px;
+    color: white;
+    opacity: 0.8;
+    margin-top: 40px;
+}
+
+.google .touch{
+    margin-left: 40px;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+}
+.google .row{
+    height: 50px;
+}
+#getnew{
+    margin-left: 230px;
+}
+.google .row img{
+    height: 35%;
+    width: 70%;
+    margin-top: 30px;
+}
+#apple{
+    margin-left: -40px;
+}
+
+
+.copyright{
+    width: 100%;
+    height: 50px;
+
+}
+.copyright hr{
+    width: 100%;
+    color: white;
+    position: absolute;
+    top: 90%;
+}
+.copyright .copy{
+    color: white;
+    position: absolute;
+    top: 94%;
+    left: 39%;
+    opacity: 0.8;
+    font-size: 14px;
+}
+
+
+/* // product  page // */
+
+.all{
+    width: 100%;
+    display: flex;
+}
+.sidebar{
+    width: 15%;
+}
+.dropdown{
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.products{
+    width: 84%;
+   
+}
+
+.products .list img
+{
+    width: 100%;
+    height: 250px;
+}
+
+.products .list h1
+{
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+.single-product button
+{
+    background-color: black;
+    color: white;
+    transition: 0.2s;
+    letter-spacing: 2px;
+}
+
+.single-product button:hover
+{
+    background: white;
+    color: black;
+}
+
+
+
+/* // login // */
+

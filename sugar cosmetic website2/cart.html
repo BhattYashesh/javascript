@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+    integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body>
+  <div class="smallheader">
+    <div class="small1">
+      <h6>New launch : Try our glide peptide serum Lipstick at RS.499 </h3>
+    </div>
+    <div class="small2">
+      <img src="image/1f5ed774-9649-4423-b694-60e28769419e.png" alt=""> <span>GET APP</span>
+      <img src="image/shop.png" alt=""> <span>STORE</span>
+      <img src="image/gift.png" alt=""> <span>GIFT CARD</span>
+      <img src="image/help.png" alt=""> <span>HELP</span>
+    </div>
+  </div>
+
+  <div class="mainheader">
+    <div class="logo">
+     <a href="index.html"> <img src="image/headerlogo.png" alt=""></a>
+    </div>
+    <div class="headerinput">
+      <input type="text" placeholder="     Try 'Liquid Lipstick'">
+      <span><button><i class="fa-solid fa-magnifying-glass fa-lg" style="color: #0a0a0a;"></i> Search</button></span>
+    </div>
+    <div class="loginhead">
+      <i class="fa-solid fa-user" style="color: #f8f7f7;"></i><span> Login/Register</span>
+    </div>
+    <div class="headicons">
+      <i class="fa-regular fa-heart" style="color: #f9fafb;"></i>
+      <i class="fa-solid fa-bag-shopping" style="color: #f7f7f8;"></i>
+      <i class="fa-solid fa-percent" style="color: #fcfcfd;"></i>
+
+    </div>
+  </div>
+
+
+  <div class="menu">
+      <ul>
+        <li><a href="product.html" style="text-decoration: none; color: white;">NEW LAUNCHES</a></li>
+        <li>LIPS</li>
+        <li>EYES</li>
+        <li>FACE</li>
+        <li>NAILS</li>
+        <li>SKINCARE</li>
+        <li>OFFERS</li>
+        <li>GIFTING</li>
+        <li>SUGAR PLAY</li>
+        <li>SUBAR POP</li>
+      </ul>
+  </div>
+
+  <div class="single-product">
+    <h1 class="my-5 fs-4 fw-normal text-center">CART</h1>
+    <div class="d-flex container justify-content-evenly my-4 w-100">
+        <table class="w-100">
+          <thead>
+            <th class="pb-3">Product</th>
+            <th class="pb-3">Operation</th>
+            <th class="pb-3">Total</th>
+          </thead>
+          <tbody></tbody>
+        </table>
+    </div>
+    <div class="container d-flex flex-column align-items-end justify-content-center">
+        <h1 id="h1-tot-price" class="fs-5 fw-normal"></h1>
+        <p>Tax included and shipping calculated at checkout</p>
+        <button class="ps-5 pt-2 pb-2 pe-5 w-25">CHECKOUT</button>
+    </div>
+  </div>
+
+</body>
+<script>
+
+fetch(`http://localhost:3000/carts/`)
+    .then((res) => res.json())
+    .then((res)=>{
+        document.querySelector("tbody").innerHTML = data(res);
+        document.querySelector("#h1-tot-price").innerHTML = "Total: Rs. " + total(res) +".00";
+    })
+    .catch((err)=>{
+        console.log(err);
+    })
+
+    function data(res)
+    { 
+        return res.map((el,i)=>{
+          return `
+            <tr style="border-top:1px solid gray; border-bottom:1px solid gray;">
+                <td class="py-3">
+                  <div class="d-flex">
+                    <img src="${el.path}" style="width:100px; height:100px;"/>
+                  <div class="d-flex justify-content-center flex-column ms-3">
+                      <h1 class="fs-6 fw-normal">${el.name}</h1>
+                      <p>RS. ${el.price}.00</p>
+                  </div>
+                  </div>
+                </td>
+                <td class="py-3"><button class="bg-white text-black" style="border:none; border-bottom:1px solid black;">Remove</button></td>
+                <td class="py-3">Rs. ${el.price}.00</td>
+            </tr>
+          `;
+        }).join("");
+    }
+
+    function total(res)
+    { 
+
+        let tprice = 0;
+
+        res.map((el,i)=>{
+          return tprice += el.price; 
+        });
+
+        return tprice;
+    }
+
+</script>
+</html>
